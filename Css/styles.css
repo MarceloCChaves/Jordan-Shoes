@@ -1,0 +1,159 @@
+/*Variáveis*/
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+  
+    --title: #181818;
+    --text: #474747;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+.landing-page{
+    background: var(--bgSite);
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    width: 100%;
+}
+header p{
+    background: var(--title);
+    color: var(--bgCard);
+}
+header h3{
+    background: var(--bgCard);
+    color: var(--title);
+    font-size: 24px;
+}
+header p, header h3{
+    text-align: center;
+    padding: 18px;
+}
+.wallpaper{
+    margin: 0 auto;
+    background-image: url(../img/wallpaper.jpeg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+}
+.slogan-walpapper{
+    margin-top: -250px;
+    color: var(--white);
+    position: absolute;
+    left: 100px;
+    font-weight: 700;
+}
+.slogan-walpapper h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.slogan-walpapper > p{
+    margin-bottom: 20px;
+}
+.hot-products{
+    text-align: center;
+    padding: 65px;
+}
+.hot-products h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.hot-products p{
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 500;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.products img{
+    width: 300px;
+    height: 300px;
+    background: var(--bgCard);
+    margin: 40px 5px 5px;
+    padding: 70px 20px;
+    transition: 1s all ease;
+    cursor: pointer;
+}
+.products img:hover{
+    transform: scale(0.9);
+    border-radius: 50%;
+}
+.footer{
+    text-align: center;
+    margin-top: 100px;
+}
+.footer p{
+    font-size: 20px;
+    padding: 18px;
+    background: var(--title);
+    color: var(--bgCard);
+}
+@media(max-width: 539px){
+    .wallpaper{
+        min-height: 300px;
+    }
+    .slogan-walpapper{
+        top: 500px;
+        left: 10px;
+    }
+    .slogan-walpapper h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .slogan-walpapper > p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .hot-products p{
+        line-height: 20px;
+        font-size: 10px;
+        transform: scale(1.4);
+    }
+    .products img{
+        margin: 0 0 20px;
+    }
+    .footer{
+        margin-top: 20px;
+    }
+}
