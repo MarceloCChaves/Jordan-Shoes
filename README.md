@@ -14,7 +14,7 @@ Desafio proposto no servidor do discord, Codelandia
 # Clone este repositório
 
  - Abra o terminal da sua ide
- - Digite: git clone https://github.com/MarceloCChaves/Desafio-Codel-ndia-01.git
+ - Digite: git clone https://github.com/MarceloCChaves/Jordan-Shoes.git
 
 # Autor
 ---
